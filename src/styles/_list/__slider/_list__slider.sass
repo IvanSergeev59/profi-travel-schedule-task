@@ -1,0 +1,42 @@
+@import "_cart-text/_list__slider_cart-text.sass"
+@import "_arrow/_list__slider_arrow.sass"
+@import "_image/_list__slider_image"
+
+.list__slider
+    width: auto
+    height: 76px
+    background-color: white
+    padding-left: 32px
+    padding-top: 36px
+    padding-bottom: 24px
+    overflow: hidden
+    display: flex
+    position: relative
+    
+
+    ul
+        padding: 0px
+        margin: 0px
+        display: flex
+        flex-direction: row
+        width: auto
+
+    li
+        list-style: none
+        display: flex
+        flex-direction: row
+        margin-right: 32px
+        width: 222px   
+
+
+@media (max-width: 999px) and (min-width: 768px)
+    .list__slider
+        width: 100%
+        margin-bottom: 120px
+
+@media (max-width: 767px)
+    .list__slider
+        width: 100%
+        padding-top: 30px
+        margin-bottom: 100px
+        

@@ -1,0 +1,165 @@
+.list__main-block_right-block
+    width: 264px
+    margin-left: 40px
+
+    .button
+        margin-top: 40px
+        background-color: white
+        border: 1px solid #185ADB
+        display: flex
+        position: relative
+        flex-direction: row
+        height: 44px
+        box-sizing: border-box
+        border-radius: 56px
+        width: 260px
+        text-align: center
+        cursor: pointer
+
+    .button:hover
+        background-color:  #185ADB
+        color: white
+
+    .button:hover::after
+        border-left: 1px solid white
+
+    .button::after
+            content: ""     
+            background-image: url('../../images/plus.png')
+            background-size: 14px 14px
+            background-position: center center
+            background-repeat: no-repeat
+            height: 44px 
+            width: 44px 
+            border-radius: 0px 56px 56px 0px
+            top: -1px
+            right: -5px
+            transition-duration: 300ms            
+            z-index: 1
+            background-color:  #185ADB
+            color: white
+            display: block
+            position: absolute
+            justify-content: center
+    .added
+        background-color: #F0F0F0
+        border: 1px solid #C0C0C0
+        color: #C0C0C0
+    .added::after
+        background-image: url('../../images/ok.png')
+        background-color: #F0F0F0
+        height: 43px
+        right: 0px
+        border-left: 1px solid #C0C0C0
+    .added:hover
+        color: black
+        background-color: #F0F0F0
+    .added:hover::after
+        border-left: 1px solid #C0C0C0    
+        background-image: url('../../images/krest.png')
+
+.button-p
+    font-family: Proxima Nova
+    font-size: 18px
+    font-style: normal
+    font-weight: 700
+    line-height: 23px
+    letter-spacing: 0em
+    text-align: center
+    margin: auto
+    margin-left: 33px
+    width: 151px
+.right-block-button
+    font-family: Proxima Nova
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: 18px
+    letter-spacing: 0em
+    text-align: center
+    margin: 0px
+    margin-top: 16px
+    width: 100%
+
+@media (max-width: 1440px) and (min-width: 1279px) 
+    .list__main-block_right-block
+        width: 264px
+
+@media (min-width: 1000px) and (max-width: 1279px)
+    .list__main-block_right-block
+        width: 29%
+@media (max-width: 999px) and (min-width: 768px) 
+    .list__main-block_right-block
+        position: absolute
+        bottom: 0px
+        width: 100%
+        margin: 0px
+        bottom: 24px
+
+        .button
+            margin: 0 auto
+            width: 90.96%
+            text-align: center
+            z-index: 2
+        .button::after
+                content: ""     
+                background-image: url('../../images/plus.png')
+                background-size: 14px 14px
+                background-position: center center
+                background-repeat: no-repeat
+                height: 44px 
+                top: -1px
+                right: -5px
+            
+
+    .button-p
+        width: 80%
+        font-size: 18px
+        margin-right: 13%
+    .right-block-button
+        text-align: center
+        position: relative
+        z-index: 2
+        margin: 0px
+        margin-top: 20px
+        width: 100%
+@media (max-width: 767px)
+    .list__main-block_right-block
+        position: absolute
+        bottom: 0px
+        width: 100%
+        margin: 0px
+        bottom: 24px
+        .button
+            margin: 0 auto
+            width: 82.85%
+            text-align: center
+            z-index: 2
+        .button::after
+                content: ""     
+                background-image: url('../../images/plus.png')
+                background-size: 14px 14px
+                background-position: center center
+                background-repeat: no-repeat
+                height: 44px 
+                top: -1px
+                right: -5px
+            
+
+    .button-p
+        width: 80%
+        font-size: 18px
+        font-weight: 700
+        line-height: 23px
+        letter-spacing: 0em
+        margin-left: 0px
+        margin-right: 20%
+    .right-block-button
+        text-align: center
+        position: relative
+        z-index: 2
+        margin: 0px
+        margin-top: 20px
+        width: 100%
+        font-size: 14px
+        line-height: 18px

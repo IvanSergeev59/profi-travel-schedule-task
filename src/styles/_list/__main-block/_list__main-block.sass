@@ -1,0 +1,34 @@
+@import "_time/_list__main-block_time.sass"
+@import "_middle-block/_list__main-block_middle-block.sass"
+@import "_right-block/_list__main-block_right-block.sass"
+
+.list__main-block
+    width: 100%
+    display: flex
+    flex-direction: row
+    background-color: white
+    position: relative
+    flex-wrap: wrap
+    border-radius: 0px 0px 20px 20px
+
+@media (max-width: 1439px) and (min-width: 1279px)
+    .list__main-block
+        width: 100%
+        padding-right: 0px
+        padding-left: 0px
+@media (max-width: 1279px) and (min-width: 1000px)
+    .list__main-block
+        width: 100%
+        padding: 0px
+@media (max-width: 999px) and (min-width: 768px) 
+    .list__main-block
+        width: 100%
+        padding: 0px
+        margin-bottom: 76px
+
+@media (max-width: 767px)
+    .list__main-block
+        width: 100%
+        padding: 0px     
+        margin-bottom: 76px
+      

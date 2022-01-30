@@ -1,0 +1,52 @@
+$font-family: Proxima Nova
+$letter-spacing: 0em  
+    
+.table__order
+    display: flex
+    position: relative
+    justify-content: end
+    width: auto
+
+    ul
+        margin: 0px        
+        padding: 0px
+        font-family: $font-family
+        font-size: 18px
+        font-style: normal
+        font-weight: 400
+        line-height: 23px
+        letter-spacing: $letter-spacing
+        text-align: center
+        display: flex
+        flex-direction: row
+        color: #888888           
+
+    p
+        margin: auto
+
+    li
+        list-style: none
+        margin-left: 16px
+
+    input
+        display: none
+    label
+        display: inline-block
+        font-family: $font-family
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 30px
+        letter-spacing: $letter-spacing
+        text-align: center
+        height: 31px
+        background-color: white
+        border-radius: 20px
+        border: 0px
+        width: 98px
+        cursor: pointer
+        color: black
+
+    input:checked + label   
+        background-color: #185ADB
+        color: #FFFFFF

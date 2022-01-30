@@ -1,0 +1,109 @@
+$font-style: Proxima Nova
+
+.header
+    width: 100%
+    display: flex
+    position: relative
+    flex-direction: row
+    justify-content: space-between
+    height: 117px
+
+    .button-table
+        color: #808090 
+        cursor: pointer
+
+    h2
+        font-family: $font-style
+        font-size: 48px
+        font-style: normal
+        font-weight: 800
+        line-height: 53px
+        letter-spacing: 0em
+        text-align: left
+        margin-top: 77px
+
+    .not-mobile
+        display: flex
+
+    .mobile
+        display: none
+
+    button
+        width: 217px
+        height: 42px
+        margin-top: 82px
+        border: 1px solid rgba(0, 2, 34, 1)
+        background: none
+        box-sizing: border-box
+        border-radius: 46px
+        display: flex
+        position: relative
+        padding: 0px
+        flex-direction: row
+        cursor: pointer
+
+    p
+        font-family: $font-style
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: 18px
+        letter-spacing: 0em
+        text-align: center
+        margin: auto
+        margin-right: 0px
+    img
+        width: 8px
+        display: flex
+        position: relative
+        height: 4px
+        display: flex
+        margin: auto
+        margin-left: 4px
+        margin-top: 20px
+
+@media (max-width: 1279px) and (min-width: 1000px) 
+    .header
+        button
+            display: none
+@media (max-width: 999px) and (min-width: 768px) 
+    .header
+        height: auto
+        h2
+            height: 106px
+            width: 37.71% 
+            margin-top: 77px
+            margin-bottom: 64px
+
+            .not-mobile
+                display: flex
+
+            .mobile
+                display: none
+        
+        button
+            display: none
+
+@media (max-width: 767px)
+    .header
+        height: auto 
+        width: 87.5%
+        margin: 0 auto
+
+        h2             
+            width: 85.31%
+            height: 129px
+            margin-bottom: 0px
+            font-size: 36px
+            font-style: normal
+            font-weight: 800
+            line-height: 43px
+
+        .not-mobile
+            display: none
+        .mobile
+            display: flex
+            
+
+        button
+            display: none
