@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/profi-travel-schedule-task/static/css/main.56b6411a.css",
+    "main.js": "/profi-travel-schedule-task/static/js/main.3bfedab0.js",
+    "static/media/ProximaNova-RegularIt.ttf": "/profi-travel-schedule-task/static/media/ProximaNova-RegularIt.20670ec5ea004ba0f245.ttf",
+    "static/media/ProximaNova-Regular.ttf": "/profi-travel-schedule-task/static/media/ProximaNova-Regular.db098dc77c7aafe660e5.ttf",
+    "static/media/ProximaNova-Bold.ttf": "/profi-travel-schedule-task/static/media/ProximaNova-Bold.f3c7fec78a9f7f598801.ttf",
+    "static/media/ProximaNova-RegularIt.woff": "/profi-travel-schedule-task/static/media/ProximaNova-RegularIt.c3a30ca6410d18a5d3ce.woff",
+    "static/media/ProximaNova-Regular.woff": "/profi-travel-schedule-task/static/media/ProximaNova-Regular.3d59ce3e9d6f49acb285.woff",
+    "static/media/ProximaNova-Bold.woff": "/profi-travel-schedule-task/static/media/ProximaNova-Bold.7bbe1c8847f08b1633a0.woff",
+    "static/media/ProximaNova-RegularIt.woff2": "/profi-travel-schedule-task/static/media/ProximaNova-RegularIt.1836fee18c601d34fdd1.woff2",
+    "static/media/ProximaNova-Regular.woff2": "/profi-travel-schedule-task/static/media/ProximaNova-Regular.c4c3616c5577f9e7ef87.woff2",
+    "static/media/ProximaNova-Bold.woff2": "/profi-travel-schedule-task/static/media/ProximaNova-Bold.c84883dfcd4817e310df.woff2",
+    "static/media/photo1.png": "/profi-travel-schedule-task/static/media/photo1.f891b53ab90277134f3e.png",
+    "static/media/photo3.png": "/profi-travel-schedule-task/static/media/photo3.60622a264051791fc50e.png",
+    "static/media/photo2.png": "/profi-travel-schedule-task/static/media/photo2.526c7a535188e13e4c76.png",
+    "index.html": "/profi-travel-schedule-task/index.html",
+    "main.56b6411a.css.map": "/profi-travel-schedule-task/static/css/main.56b6411a.css.map",
+    "main.3bfedab0.js.map": "/profi-travel-schedule-task/static/js/main.3bfedab0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56b6411a.css",
+    "static/js/main.3bfedab0.js"
+  ]
+}
