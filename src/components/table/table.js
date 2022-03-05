@@ -7,6 +7,7 @@ const Table = (props) => {
     const TableContainer = (props) => {
         const {arr} = props;
         return arr.map(item => {
+            let emptyContainer = item.time2[0] ? null : 'block__container_empty' 
             return (
                 <div className="table__blocks_block" key={item.id}>
                     <div className={`block__top ${item.yellow}`}><p>{item.date}</p></div>
@@ -19,7 +20,7 @@ const Table = (props) => {
                             <p className="add-to-calendar_p" dangerouslySetInnerHTML={{__html: `${item.buttonText1}`}}></p><div className={`add-to-calendar_image ${item.buttonImage1}`} id={item.buttonId1} onClick={(event) => addToCalendar(event.target.id)}></div>
                         </div>
                     </div>
-                    <div className="block__container">
+                    <div className={`block__container ${emptyContainer}`}>
                         <h3 className={item.time2[2]}>{item.time2[0]}<span> {item.time2[1]}</span></h3>
                         <p><a className="block__container_office" href="/#">{item.office2}</a></p>
                         <p>{item.p2}</p>

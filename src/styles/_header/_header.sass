@@ -1,19 +1,20 @@
 $font-style: Proxima Nova
 
 .header
-    width: 100%
+    width: 1440px
     display: flex
     position: relative
     flex-direction: row
     justify-content: space-between
+    margin: 0 auto
     height: 117px
+    font-family: $font-style
 
     .button-table
         color: #808090 
         cursor: pointer
 
     h2
-        font-family: $font-style
         font-size: 48px
         font-style: normal
         font-weight: 800
@@ -43,7 +44,7 @@ $font-style: Proxima Nova
         cursor: pointer
 
     p
-        font-family: $font-style
+        
         font-size: 14px
         font-style: normal
         font-weight: 400
@@ -61,13 +62,20 @@ $font-style: Proxima Nova
         margin: auto
         margin-left: 4px
         margin-top: 20px
-
+@media (max-width: 1599px) and (min-width: 1440px)
+    .header
+        width: 1280px
+@media (max-width: 1439px) and (min-width: 1279px)
+    .header
+        width: 1120px
 @media (max-width: 1279px) and (min-width: 1000px) 
     .header
+        width: 964px
         button
             display: none
 @media (max-width: 999px) and (min-width: 768px) 
     .header
+        width: 92.18%
         height: auto
         h2
             height: 106px

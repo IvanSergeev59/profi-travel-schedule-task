@@ -4,8 +4,9 @@ import { connect } from "react-redux";
 import { addButton } from "../../actions";
 
 const List = (props) => {
-    const {addButton} = props
-    const {buttonListText, list, buttonListStyle} = props.schedule
+    const {addButton} = props;
+    const {buttonList} = props.buttons
+    const { list} = props.schedule
     const [showProgramm, changeShowedProgramm] = useState(false);
     const showedProgramm = showProgramm ? <Programm /> : null
     function onClickProgramm() {
@@ -28,16 +29,28 @@ const List = (props) => {
     }
 
     const ListContainer = () => {
-        const [carousel, onCarouselClick] = useState(0)
+        const [carousel, onCarouselClick] = useState(0);        
         const onCarouselArrow = () => {
-            let carouselUl = document.getElementsByName('carousel');
-            let wi = carouselUl[0].offsetWidth/10;
-            carousel+(wi*5)<0 ? onCarouselClick(0) : onCarouselClick((carousel - wi));            
-            carouselUl[0].style.marginLeft = `${carousel}px`;
+            let carouselUl = document.getElementsByName('carousel')[0];
+            //get all width of slider
+            let carouselUlWidth = document.getElementsByName('carousel')[0].offsetWidth;
+            // get width of screen
+            let list = document.getElementsByName('list')[0].offsetWidth;
+            //get summ of prev width + screen width
+            let moveWidth =   carousel+list;
+            onCarouselClick(moveWidth);
+            if  ((moveWidth)<carouselUlWidth) { 
+            carouselUl.style.marginLeft = `-${moveWidth}px`;
+            }
+            else {
+                moveWidth = 0;
+                onCarouselClick(0)
+                carouselUl.style.marginLeft=`0px`
+            }
         }
          return list.map((item) => {         
             return (
-                <div className="list" key={item.id}>
+                <div className="list" name="list" key={item.id}>
                 <h3>{item.h3}</h3>
                 <div className="list__main-block">                
                     <div className="list__main-block_time">
@@ -50,7 +63,7 @@ const List = (props) => {
                         {showedProgramm}
                     </div>
                     <div className="list__main-block_right-block">
-                        <button className={`button buttonListStyle ${buttonListStyle}`} onClick={addButton}><p className="button-p">{buttonListText}</p> </button>
+                        <button className={`button buttonListStyle ${buttonList.style}`} onClick={addButton}><p className="button-p">{buttonList.text}</p> </button>
                         <p className="right-block-button">{item.membersCount} {item.members}</p>
                     </div>
                     <div className="list__hr">

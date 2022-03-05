@@ -4,11 +4,13 @@
 @import "__programm/_list__programm.sass"
 
 .list
+    margin: 0 auto
     margin-top: 64px
-    width: 100%    
+    width: 1440px   
+    font-family: Proxima Nova 
 
     h3
-        font-family: Proxima Nova
+        
         font-size: 24px
         font-style: normal
         font-weight: 400
@@ -25,16 +27,27 @@
         margin-top: 0px
         margin-bottom: 0px
 
+@media (max-width: 1599px) and (min-width: 1440px)
+    .list
+        width: 1280px
+@media (max-width: 1439px) and (min-width: 1279px)
+    .list
+        width: 1120px
 @media (max-width: 999px) and (min-width: 768px) 
     .list
         margin-top: 0px
+@media (max-width: 1279px) and (min-width: 1000px) 
+    .list
+        width: 964px
+@media (max-width: 999px) and (min-width: 768px) 
+    .list
+        width: 92.18%
 @media (max-width: 767px)
     .list
         margin: 0 auto
         margin-top: 40px
         width: 87.5%        
         h3
-            font-family: Proxima Nova
             font-size: 18px
             font-style: normal
             font-weight: 400

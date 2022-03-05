@@ -1,6 +1,5 @@
 @import "_add-to-calendar/_block__container_add-to-calendar.sass"
-    
-$font-family: Proxima Nova
+
 
 
 .block__container
@@ -10,12 +9,12 @@ $font-family: Proxima Nova
     width: 77.94%    
     padding-left: 11.03%
     padding-right: 11.03%
-    height: 274px
+    min-height: 224px
     flex-direction: column
     background-color: #ffff
+    padding-bottom: 50px
 
     h3
-        font-family: $font-family
         font-size: 16px
         font-style: normal
         font-weight: 800
@@ -36,7 +35,6 @@ $font-family: Proxima Nova
             margin-left: 4px
 
     p        
-        font-family: $font-family
         font-size: 13px
         font-style: normal
         font-weight: 400
@@ -68,6 +66,7 @@ $font-family: Proxima Nova
 
 .block__container:last-of-type
     margin-top: 2px
-
+.block__container_empty:last-of-type
+    margin-top: 0px
 .gray-text
     color: #E5E5E5
